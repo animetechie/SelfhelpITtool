@@ -1,2 +1,7 @@
-# SelfhelpITtool
-Powershell Script that helps with common IT issues
+This script is designed to help users troubleshoot and resolve hardware issues on their computer. When the script is run, the user is prompted to enter whether they are experiencing hardware or software issues. If the user selects "hardware", they are prompted to enter the type of hardware issue they are experiencing. Depending on their response, the script will take different actions.
+
+For example, if the user selects "1" for audio or video issues, they are prompted to specify whether their issue is related to audio or video. If they select "audio", they are asked if they would like to uninstall and reinstall their audio driver. If they choose "yes", the script will get a list of installed audio drivers, uninstall them, and then scan for hardware changes and install the updated drivers. If the user selects "no", the script will do nothing and move on to the next prompt.
+
+If the user selects "2" for network issues, the script will check the network adapters and update the drivers for each one. It will then run the ipconfig /refresh and ipconfig /renew commands to refresh the IP configuration. If the user selects "3" for printing issues, the script will check for updates to the printer drivers and install any that are available. If the user selects "4" for keyboard and mouse issues, the script will prompt the user to email the helpdesk with their issue.
+
+If the user selects "software", the script will do nothing and move on to the next prompt. If the user enters an invalid response at any point, the script will print an error message and ask them to enter a valid response.
